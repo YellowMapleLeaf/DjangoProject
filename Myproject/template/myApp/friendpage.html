@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>好友页</title>
+</head>
+<body>
+    <ul>
+        {% for frd in friends %}
+        <li>
+            {{ frd.fName }}-----{{ frd.fSingle }}
+        </li>
+        {% endfor %}
+    </ul>
+    <ul>
+        {% for i in friends.paginator.page_range %}
+            {% if i == friends.number  %}
+            <li>
+                    {{ i }}
+            </li>
+            {% else %}
+            <li>
+                <a href="/friendpage/{{ i }}/">
+                    {{ i }}
+                </a>
+            </li>
+            {% endif %}
+
+
+        {% endfor %}
+    </ul>
+</body>
+</html>

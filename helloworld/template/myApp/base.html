@@ -1,0 +1,21 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>模板</title>
+    <link href="{% static 'myApp/css/stu.css' %}" type="text/css" rel="stylesheet">
+    <script src="/static/myApp/js/hello.js"></script>
+</head>
+<body>
+    <div id="head">header</div>
+    <h1>sdfdsfdsfwe</h1>
+    <div>
+        {%  block body  %}
+
+        {% endblock %}
+    </div>
+
+    <div id="foot">footer</div>
+</body>
+</html>

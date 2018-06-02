@@ -1,0 +1,15 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+
+    <link type="text/css" rel="stylesheet" href="{% static 'myApp/css/style.css' %}" >
+</head>
+<body>
+    <h1>欢迎：{{ username }}</h1>
+    <a href="/login/">登录</a>
+    <h1>欢迎下次</h1>
+</body>
+</html>

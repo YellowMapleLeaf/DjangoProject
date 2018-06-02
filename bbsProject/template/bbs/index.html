@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load custom %}
+
+{% block pg-container %}
+    <div class="wrap-left">
+        {% for article in article_list %}
+{#            每一个内容的盒子#}
+        <div class="article-box row" >
+
+{#        文章的图片#}
+            <div class="article-img col-lg-4">
+{#                将article.id当做参数传到articalShow，将article.head_img当参数传给truncate_url#}
+                <a href="{% url 'articalShow' article.id %}"><img src="/static/{{ article.head_img | truncate_url }}"></a>
+            </div>
+{#        文章的内容#}
+            <div class="article-content col-lg-8">
+                <a href="{% url 'articalShow' article.id %}">{{ article.content }}</a>
+            </div>
+{#        文章作者等信息#}
+            <div class="article-info col-lg-8">
+                <a href="#"><img src="/static/{{ article.author.head_img|truncate_url }}"></a>
+                <a href="#"><span>{{ article.author }}</span></a>
+                <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
+                <span>{{ article.pub_date }}</span>
+{#                article当做参数传给filter_comment，filter_comment的返回值赋值给comment将#}
+                {% filter_comment article as comment %}
+                <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
+                <span>{{ comment.comment_count }}</span>
+                <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+                <span>{{ comment.thumb_count }}</span>
+            </div>
+{#        文章的简介#}
+            <div class="article-brief col-lg-8">
+                {% if article.brief != None %}
+                    {{ article.brief }}
+                {% endif %}
+            </div>
+        </div>
+         <hr>
+         <div class="clear_both"></div>
+    {% endfor %}
+    </div>
+
+    <div class="wrap-right">
+
+    </div>
+{% endblock %}
+
+
+
+
+

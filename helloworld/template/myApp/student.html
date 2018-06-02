@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学生信息</title>
+</head>
+<body>
+    <ul>
+        {% for stu in students  %}
+        <li>
+            <a href="{% url 'app:bases' %}">{{ forloop.counter }}----{{ stu.sname }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+    <h1>加减乘除</h1>
+    <h1>{{  num|add:5 }}</h1>
+    <h1>{{  num|add:-5 }}</h1>
+
+    <h1>{% widthratio num 1 5 %}</h1>
+    <h1>{% widthratio num 5 1 %}</h1>
+    <h1>{{ str|upper }}</h1>
+    <h1>{{ text|default:"AreYouReady" }}</h1>
+    {% comment %}
+    这里是注释，你怎么写都没有用
+    真的没有用，不要再写了，兄弟
+    {% endcomment %}
+</body>
+</html>

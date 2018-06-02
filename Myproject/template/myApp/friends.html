@@ -1,0 +1,22 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>朋友信息</title>
+{#    <link type="text/css" rel="stylesheet" href="/static/myApp/css/friends.css">#}
+    <link type="text/css" rel="stylesheet" href="{% static 'myApp/css/friends.css' %}">
+    <script src="{% static 'myApp/js/fri.js' %}"></script>
+</head>
+<body>
+    <h1>我的朋友：</h1>
+    <ul>
+        {% for foo in friends %}
+         <li>
+                <a href="#">{{ foo.fName }}</a>
+         </li>
+        {% endfor %}
+
+    </ul>
+</body>
+</html>

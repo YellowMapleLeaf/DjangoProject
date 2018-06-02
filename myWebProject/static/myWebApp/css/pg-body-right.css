@@ -1,0 +1,69 @@
+/*右边模块属性*/
+.body-right{
+    position: absolute;
+    right: 0;
+    top:180px;
+    background-color: #e8edf0;
+    height: 2900px;
+    width: 300px;
+}
+
+/*右边模块input标签的属性*/
+.body-right .right-input .textInput{
+    height: 20px;
+    width: 180px;
+    margin-left: 15px;
+    margin-top: 20px;
+    padding: 2px;
+    border: 1px solid #7e9db9;
+}
+/*右边模块buttont标签的属性*/
+.body-right .right-input .btn{
+    height: 25px;
+    width: 80px;
+    color: grey;
+}
+
+/*右边模块图片标签的属性*/
+.body-right .right-img a img{
+    width: 300px;
+    height: 250px;
+    margin-top: 20px;
+}
+/*右边第一个没有标题标签的模块*/
+.body-right .right-ad{
+    border: 1px solid grey;
+    margin-top: 20px;
+}
+/*设置模块标题标签字体属性*/
+.body-right .title-public h4 a{
+    color: #e47911;
+    font-size: 15px;
+    margin-left: 10px;
+}
+/*设置有标题标签的模块*/
+.body-right .title-public h4{
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+/*设置>>符号的属性*/
+.body-right .title-public .more a{
+    position: absolute;
+    right: 1px;
+    font-size: 8px;
+}
+
+.body-right .right-ad ul li{
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    overflow:hidden;
+}
+
+
+/*设置内容的字体*/
+.body-right .right-ad ul li a{
+    font-size: 12px;
+    width: 300px;
+    margin: 8px;
+}
+

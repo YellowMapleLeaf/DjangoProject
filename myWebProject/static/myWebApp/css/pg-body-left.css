@@ -1,0 +1,149 @@
+.pg-body .body-left {
+    float: left;
+    position: relative;
+    display: block;
+    background-color: #EEEEFF;
+}
+/*left-frist,网址分类的css内容*/
+.pg-body .body-left .left-frist{
+    border-left: 4px solid #146eb4;
+    border-right: 1px solid #83abc6;
+    border-bottom: 3px solid #146eb4;
+    border-top: 3px solid #146eb4;
+    margin-top: 3px;
+    width: 160px;
+
+}
+
+.pg-body .body-left .left-frist .netTitle{
+    text-align: center;
+    height: 27px;
+    border-bottom: 1px dotted #83abc6;
+    /*background:url(/static/myWebApp/img/title.png) no-repeat bottom left*/
+    font-size: 15px;
+}
+
+
+#classification li{
+    background: url(/static/myWebApp/img/classification.gif) no-repeat 136px center;
+    border-bottom: 1px dotted #83abc6;
+    cursor: pointer;
+}
+
+#classification li:hover{
+    background-color: white;
+}
+
+#classification li a{
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    line-height:27px;
+    height: 27px;
+    font-size: 12px;
+}
+
+.itemPublic{
+    float: left;
+    display: block;
+    /*border: 1px solid #83abc6;*/
+    margin-top: 3px;
+    background-color: #EEEEFF ;
+}
+
+
+.pg-body .Item ul li{
+    background: url(/static/myWebApp/img/classification.gif) no-repeat 136px center;
+    background-position:center left 5%;
+    font-size: 12px;
+    line-height: 20px;
+    width: 150px;
+    height: 27px;
+    cursor: pointer;
+}
+
+.pg-body .left-frist-content #left-frist-item1{
+    position: absolute;
+    left:160px;
+    margin-top: 33px;
+    z-index: 2;
+}
+.pg-body .left-frist-content #left-frist-item2{
+    position: absolute;
+    left:160px;
+    margin-top: 60px;
+    z-index: 2;
+}
+
+.pg-body .left-frist-content #left-frist-item3{
+    position: absolute;
+    left:160px;
+    margin-top: 88px;
+    z-index: 2;
+}
+.pg-body .left-frist-content #left-frist-item4{
+    position: absolute;
+    left:160px;
+    margin-top: 117px;
+    z-index: 2;
+}
+.pg-body .left-frist-content #left-frist-item5{
+    position: absolute;
+    left:160px;
+    margin-top: 145px;
+    z-index: 2;
+}
+.pg-body .left-frist-content #left-frist-item6{
+    position: absolute;
+    left:160px;
+    margin-top: 172px;
+    z-index: 2;
+}
+.pg-body .left-frist-content #left-frist-item7{
+    position: absolute;
+    left:160px;
+    margin-top: 201px;
+    z-index: 2;
+}
+.pg-body .left-frist-content #left-frist-item8{
+    position: absolute;
+    left:160px;
+    margin-top: 228px;
+    z-index: 2;
+}
+.pg-body .left-frist-content #left-frist-item9{
+    position: absolute;
+    left:160px;
+    margin-top: 256px;
+    z-index: 2;
+}
+.pg-body .left-frist-content #left-frist-item10{
+    position: absolute;
+    left:160px;
+    margin-top: 282px;
+    z-index: 2;
+}
+
+
+/*left-second,链接之后的框的css内容*/
+.pg-body .body-left .left-public{
+    border-left: 2px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid #ccc;
+    margin-top: 3px;
+    width: 160px;
+}
+.pg-body .body-left .left-public h5{
+    margin: 10px;
+}
+.pg-body .body-left .left-public li{
+    margin-left: 20px;
+}
+.pg-body .body-left .left-public li a{
+    line-height: 20px;
+    text-align: center;
+    font-size: 12px;
+}
+
+

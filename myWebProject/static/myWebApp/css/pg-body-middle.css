@@ -1,0 +1,151 @@
+/*.pg-body{*/
+    /*position: relative;*/
+
+/*}*/
+/*body的中间部分属性*/
+.pg-body .body-middle{
+    width: 850px;
+    margin-left: 170px;
+    z-index: 1;
+}
+
+.pg-body .body-middle{
+    /*border: 2px;*/
+    /*border-color:#c8d3de #c8d3de #fff;*/
+    /*background-color:#fff;*/
+}
+/*中间的首页，精华整体div的属性*/
+.pg-body .body-middle .middle-Menu{
+    border-bottom: 1px solid #c8d3de;
+    height: 41px;
+}
+
+/*中间的首页，精华等每一个的属性*/
+.pg-body .body-middle .middle-Menu ul li{
+    float: left;
+    margin-left: 10px;
+    margin-top: 3px;
+    background-color:#e8edf0;
+    border: 2px solid;
+    border-color:#c8d3de #c8d3de #fff #c8d3de;
+    height: 35px;
+    width: 60px;
+    text-align: center;
+}
+.pg-body .body-middle .middle-Menu ul li a{
+    line-height: 35px;
+}
+
+/*首页等这些被选中的底色变为白色*/
+.pg-body .body-middle .middle-Menu .whiteColor{
+    background-color: white;
+}
+
+/*
+[编辑推荐]谈谈我开发过的几套语音通信解决方案 (1/1021) »
+[最多推荐]NewLife.Net——构建可靠的网络服务(3/1693) »
+[最多评论]手把手教你全家桶之React(二)(7/644) »
+[新闻头条]微软发布了一台能直播写代码的智能会议电话机，太虐人了！(10/2659) »
+[推荐新闻].NET Core 3新特性公布：支持Windows桌面应用(11/1240) »*/
+.pg-body .body-middle .middle-headline{
+    margin-left: 8px;
+    margin-top: 10px;
+    border: 5px solid transparent;
+}
+
+.pg-body .body-middle .middle-headline ul li{
+    margin: 10px;
+}
+
+.pg-body .body-middle .middle-headline ul li a{
+    font-size: 10px;
+    color: blue;
+}
+
+.pg-body .body-middle .middle-headline ul li a:hover{
+    font-size: 15px;
+    color: red;
+    border: 0px;
+}
+
+/*中间显示内容的属性*/
+.pg-body .body-middle .middle-Menu-content{
+    width: 850px;
+    height: 2950px;
+    /*background-color: #2b6695;*/
+}
+
+.pg-body .body-middle .middle-Menu-content {
+    height: 140px;
+    width: 850px;
+    border-bottom: solid 1px grey;
+    margin-top: 20px;
+}
+/*左边推荐的*/
+.pg-body .body-middle .middle-Menu-content .content-item .item-left{
+    /*border: 1px solid red;*/
+    background: url(/static/myWebApp/img/middle-left.gif) no-repeat;
+    float: left;
+    width: 46px;
+    height: 52px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 30px;
+    margin-left: 20px;
+}
+/*右边的各个属性*/
+.pg-body .body-middle .middle-Menu-content .content-item .item-right{
+    margin-left: 80px;
+    height: 70px;
+    width: 800px;
+}
+
+.pg-body .body-middle .middle-Menu-content .content-item .item-right h4 a{
+    color: blue;
+    text-decoration: underline;
+    font-size: 15px;
+}
+
+.pg-body .body-middle .middle-Menu-content .content-item .item-right .img {
+    float: left;
+    margin-top: 10px;
+}
+
+
+.pg-body .body-middle .middle-Menu-content .content-item .item-right .content{
+    font-size: 12px;
+    float: left;
+    width: 600px;
+    margin-left: 10px;
+    margin-top: 10px;
+    line-height: 1.8em;
+    color: #333;
+    display: block;
+}
+
+.pg-body .body-middle .middle-Menu-content .content-item .item-bottom{
+    position: absolute;
+    width: 800px;
+    height: 20px;
+    bottom: 20px;
+    left: 80px;
+    font-size: 12px;
+}
+.pg-body .body-middle .middle-Menu-content .content-item .item-bottom .comment{
+    background: transparent url(/static/myWebApp/img/pinglun.gif) no-repeat scroll 0 0;
+    background-position:center left 4%;
+    margin-left: 10px;
+}
+
+.pg-body .body-middle .middle-Menu-content .content-item .item-bottom .comment a:hover{
+    text-decoration: none;
+}
+
+.pg-body .body-middle .middle-Menu-content .content-item .item-bottom .reading{
+    background: transparent url(/static/myWebApp/img/yuedu.gif) no-repeat scroll 0 0;
+    background-position:center left 4%;
+    margin-left: 10px;
+}
+.pg-body .body-middle .middle-Menu-content .content-item .item-bottom .reading a:hover{
+    text-decoration: none;
+}

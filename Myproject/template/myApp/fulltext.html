@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>富文本</title>
+    <script src="/static/tiny_mce/tiny_mce.js"></script>
+    <script>
+        tinyMCE.init({
+            'mode':'textareas',
+            'theme':'advanced',
+            'width':800,
+            'height':700
+        })
+    </script>
+</head>
+<body>
+    <form action="/getFullText/">
+        <textarea name="str">aaaaaaaaahhhhhhhhhhaaaaaaaa</textarea>
+        <input type="submit" value="提交"/>
+
+    </form>
+</body>
+</html>

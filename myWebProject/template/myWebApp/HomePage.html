@@ -1,0 +1,528 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+{#    <link rel="stylesheet" type="text/css" href="/static/myWebApp/css/pg-head.css">#}
+    <link rel="stylesheet" type="text/css" href="{% static 'myWebApp/css/pg-head.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static 'myWebApp/css/pg-body-left.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'myWebApp/css/pg-body-middle.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static 'myWebApp/css/pg-body-right.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static 'myWebApp/css/pg-tail.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static 'myWebApp/css/public.css'%}">
+
+
+    <script src="{% static 'myWebApp/js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'myWebApp/js/pg-body-left.js' %}"></script>
+    <script src="{% static 'myWebApp/js/pg-body-middle.js' %}"></script>
+</head>
+<body>
+    <div class="pg-head">
+        <div class="head-frist">
+            <span>代码改变世界</span>
+            <div>
+                [ <a href="#">登录</a> ·
+                <a href="#">注册</a> ]
+            </div>
+        </div>
+
+        <div class="head-second">
+            <img src="{% static 'myWebApp/img/1.gif' %}">
+            <img src="{% static 'myWebApp/img/2.jpg' %}" id="img2">
+        </div>
+
+        <div class="nav-menu">
+            <ul>
+                <li><a href="#">园子</a></li>
+                <li><a href="#">新闻</a></li>
+                <li><a href="#">博问</a></li>
+                <li><a href="#">闪现</a></li>
+                <li><a href="#">小组</a></li>
+                <li><a href="#">收藏</a></li>
+                <li><a href="#">招聘</a></li>
+                <li><a href="#">班级</a></li>
+                <li><a href="#">找找看</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="pg-body">
+        <div class="body-left">
+{#            左边第一个框，网址分类#}
+            <div class="left-frist">
+                <div class="netTitle">网站分类</div>
+                <div id="classification">
+                    <ul id="classify">
+                        <li target="item1"><a href="#">.NET技术</a></li>
+                        <li target="item2"><a href="#">编程语言</a></li>
+                        <li target="item3"><a href="#">软件设计</a></li>
+                        <li target="item4"><a href="#">Web前端</a></li>
+                        <li target="item5"><a href="#">企业信息化</a></li>
+                        <li target="item6"><a href="#">手机开发</a></li>
+                        <li target="item7"><a href="#">软件工程</a></li>
+                        <li target="item8"><a href="#">数据库技术</a></li>
+                        <li target="item9"><a href="#">操作系统</a></li>
+                        <li target="item10"><a href="#">其他分类</a></li>
+                        <li><a href="#">所有随笔</a></li>
+                        <li><a href="#">所有评论</a></li>
+                    </ul>
+                </div>
+
+            </div>
+{#            左边第二个框，链接#}
+            <div class="left-public">
+                <h5>链接</h5>
+                <ul>
+                    <li><a href="#">反馈或建议</a></li>
+                    <li><a href="#">官方博客</a></li>
+                    <li><a href="#">博客模板</a></li>
+                    <li><a href="#">java博客</a></li>
+                    <li><a href="#">c++博客</a></li>
+                    <li><a href="#">手机版</a></li>
+                </ul>
+            </div>
+{#            左边第三个框，最新推荐博客#}
+
+            <div class="left-public">
+                <h5>最新推荐博客</h5>
+                <ul>
+                    <li><a href="#">FlyLolo</a></li>
+                    <li><a href="#">shaomeng</a></li>
+                    <li><a href="#">侯振宇</a></li>
+                    <li><a href="#">ITDragon龙</a></li>
+                    <li><a href="#">程序猿小卡</a></li>
+                    <li><a href="#">» 更多推荐博客</a></li>
+                </ul>
+            </div>
+
+            <div class="left-public">
+                <h5>推荐博客排行</h5>
+                <ul>
+                    <li><a href="#">1. Fish Li</a></li>
+                    <li><a href="#">2. Artech</a></li>
+                    <li><a href="#">3. 路过秋天</a></li>
+                    <li><a href="#">4. 腾飞（Jesse)</a></li>
+                    <li><a href="#">5. 数据之巅</a></li>
+                    <li><a href="#">6. 小坦克</a></li>
+                    <li><a href="#">7. CareySon</a></li>
+                    <li><a href="#">8. 葡萄城控件技术团队</a></li>
+                    <li><a href="#">9. 三生石上(FineUI控件)</a></li>
+                    <li><a href="#">10. 张善友</a></li>
+                    <li><a href="#">11. 一线码农</a></li>
+                    <li><a href="#">12. Vamei</a></li>
+                    <li><a href="#">13. 叶小钗</a></li>
+                    <li><a href="#">14. 农码一生</a></li>
+                    <li><a href="#">15. ChokCoco</a></li>
+                    <li><a href="#">16. Edison Chou</a></li>
+                    <li><a href="#">17. Savorboard</a></li>
+                    <li><a href="#">18. Jimmy Zhang</a></li>
+                    <li><a href="#">19. Insus.NET</a></li>
+                    <li><a href="#">20. 滴答的雨</a></li>
+                    <li><a href="#">21. 司徒正美</a></li>
+                    <li><a href="#">22. 请叫我头头哥</a></li>
+                    <li><a href="#">23. 夏天的森林</a></li>
+                    <li><a href="#">24. 匠心十年</a></li>
+                </ul>
+            </div>
+
+            <div class="left-public">
+                <h5>统计信息</h5>
+                <ul>
+                    <li>博客 - 413574</li>
+                    <li>随笔 - 5440351</li>
+                    <li>文章 - 577262</li>
+                    <li>评论 - 3033497</li>
+                </ul>
+            </div>
+        </div>
+
+{#        左边第一个框网址分类里的每一个内容选项#}
+        <div class="left-frist-content">
+            <div class="itemPublic" id="left-frist-item1">
+                <div class="Item hide"  id="item1">
+                    <ul>
+                        <li>　　　.NET新手区</li>
+                        <li>　　　ASP.NET</li>
+                        <li>　　　C#</li>
+                        <li>　　　.NET Core</li>
+                        <li>　　　WinForm</li>
+                        <li>　　　Slilverrlight</li>
+                        <li>　　　WCF</li>
+                        <li>　　　CLR</li>
+                        <li>　　　WPF</li>
+                        <li>　　　XNA</li>
+                        <li>　　　Visual Studio</li>
+                        <li>　　　ASP.NET MVC</li>
+                        <li>　　　控制开发</li>
+                        <li>　　　Entity Framework</li>
+                        <li>　　　NHibernate</li>
+                        <li>　　　WinRT/Metro</li>
+                        <li>　　　UWP</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="itemPublic" id="left-frist-item2">
+                <div class="Item hide" id="item2">
+                    <ul>
+                        <li>　　　java</li>
+                        <li>　　　c++</li>
+                        <li>　　　PHP</li>
+                        <li>　　　Delpin</li>
+                        <li>　　　python</li>
+                        <li>　　　Ruby</li>
+                        <li>　　　C语言</li>
+                        <li>　　　Erlang</li>
+                        <li>　　　Go</li>
+                        <li>　　　Swift</li>
+                        <li>　　　scala</li>
+                        <li>　　　R语言</li>
+                        <li>　　　其他语言</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="itemPublic" id="left-frist-item3">
+                <div class="Item hide" id="item3">
+                    <ul>
+                        <li>　　　架构设计</li>
+                        <li>　　　面向对象</li>
+                        <li>　　　设计模式</li>
+                        <li>　　　领域驱动设计</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="itemPublic" id="left-frist-item4">
+                <div class="Item hide" id="item4">
+                    <ul>
+                        <li>　　　HTML/CSS</li>
+                        <li>　　　JAVASCRIPT</li>
+                        <li>　　　JQUERY</li>
+                        <li>　　　HTML5</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="itemPublic" id="left-frist-item5">
+                <div class="Item hide" id="item5">
+                    <ul>
+                        <li>　　　BMP</li>
+                        <li>　　　SharePoint</li>
+                        <li>　　　GIS技术</li>
+                        <li>　　　SAP</li>
+                        <li>　　　Oracal ERP</li>
+                        <li>　　　Dynamic CRM</li>
+                        <li>　　　信息安全</li>
+                        <li>　　　企业信息化其他</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="itemPublic"  id="left-frist-item6">
+                <div class="Item hide" id="item6">
+                    <ul>
+                        <li>　　　Android</li>
+                        <li>　　　IOS</li>
+                        <li>　　　Windows Phone</li>
+                        <li>　　　Windows Mobile</li>
+                        <li>　　　其他手机开发</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="itemPublic" id="left-frist-item7">
+                <div class="Item hide" id="item7">
+                    <ul>
+                        <li>　　　敏捷开发</li>
+                        <li>　　　项目与团队合作</li>
+                        <li>　　　软件工程及其他</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="itemPublic" id="left-frist-item8">
+                <div class="Item hide" id="item8">
+                    <ul>
+                        <li>　　　SQL server</li>
+                        <li>　　　oracal</li>
+                        <li>　　　MySQL</li>
+                        <li>　　　noSQL</li>
+                        <li>　　　大数据</li>
+                        <li>　　　其他数据库</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="itemPublic" id="left-frist-item9">
+                <div class="Item hide" id="item9">
+                    <ul>
+                        <li>　　　Windows</li>
+                        <li>　　　Windows server</li>
+                        <li>　　　linux</li>
+                        <li>　　　OS X</li>
+                        <li>　　　嵌入式</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="itemPublic" id="left-frist-item10">
+                <div class="Item hide" id="item10">
+                    <ul>
+                        <li>　　　非技术区</li>
+                        <li>　　　软件测试</li>
+                        <li>　　　代码与软件发布</li>
+                        <li>　　　计算机图形学</li>
+                        <li>　　　游戏开发</li>
+                        <li>　　　程序人生</li>
+                        <li>　　　求职面试</li>
+                        <li>　　　读书区</li>
+                        <li>　　　转载区</li>
+                        <li>　　　翻译区</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="body-middle">
+            <div class="middle-Menu">
+                <ul>
+                    <li class="whiteColor" target="home-page"><a href="#" >首页</a></li>
+                    <li target="essence"><a href="#" >精华</a></li>
+                    <li><a href="#">候选</a></li>
+                    <li><a href="#">新闻</a></li>
+                    <li><a href="#">关注</a></li>
+                    <li><a href="#">我评</a></li>
+                    <li><a href="#">我赞</a></li>
+                </ul>
+            </div>
+            <div class="middle-headline">
+                <ul>
+                    <li><a href="#">[编辑推荐]谈谈我开发过的几套语音通信解决方案 (1/1021) »</a></li>
+                    <li><a href="#">[最多推荐]NewLife.Net——构建可靠的网络服务(3/1693) »</a></li>
+                    <li><a href="#">[最多评论]手把手教你全家桶之React(二)(7/644) »</a></li>
+                    <li><a href="#">[新闻头条]微软发布了一台能直播写代码的智能会议电话机，太虐人了！(10/2659) »</a></li>
+                    <li><a href="#">[推荐新闻].NET Core 3新特性公布：支持Windows桌面应用(11/1240) »</a></li>
+                </ul>
+            </div>
+{#            首页要显示的内容        #}
+            {% for content in contentList %}
+            <div class="middle-Menu-content" id="home-page" style="position: relative">
+                <div class="content-item" >
+                    <div class="item-left">
+                        <span>0</span>
+                    </div>
+
+                    <div class="item-right">
+                        <h4 style="margin: 0px"><a href="#">{{ content.title }}</a></h4>
+                        <div class="img"><a><img src="{{ content.img }}"></a></div>
+                        <div class="content">{{ content.text }}</div>
+                    </div>
+
+                    <div class="item-bottom" >
+                        <a href="#">{{ content.username }}</a>　　发布于{{ content.time }}
+                        <span class="comment"><a href="#" >　　评论</a></span>
+                        <span class="reading"><a href="#" >　　阅读</a></span>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+
+        </div>
+
+        <div class="body-right">
+            <div class="right-input">
+                <input type="text" name="find" class="textInput"/>
+                <input type="button" name="findsee" value="找找看" class="btn"/>
+                <input type="text" name="find" class="textInput"/>
+                <input type="button" name="findsee" value="Google" class="btn"/>
+            </div>
+            
+            <div class="right-img">
+                <a href="#"><img src="{% static 'myWebApp/img/yun.jpg' %}">
+                </a>
+            </div>
+
+            <div class="right-ad">
+                <ul>
+                    <li><a href="#">【推荐】HTML5拓扑3D机房，电力工控Web SCADA</a></li>
+                    <li><a href="#">【活动】2050大会 - 年青人因科技而团聚（杭州）</a></li>
+                    <li><a href="#">【推荐】适合零基础学习的Java就业课程</a></li>
+                    <li><a href="#">【推荐】腾讯云小程序开发套餐11元/月起</a></li>
+                    <li><a href="#">【最新】40+篇服务器操作及运维基础知识</a></li>
+                </ul>
+            </div>
+
+            <div class="right-ad title-public">
+                <h4>
+                    <a href="#">最新新闻</a>
+                    <span class="more">
+                        <a href="#"> 》</a>
+                    </span>
+                </h4>
+                <ul>
+                    <li><a href="#">都觉得Android P手势抄袭了iPhone X？看完这几段演示再下结论吧</a></li>
+                    <li><a href="#">懒人福音！耐克可能会在你的鞋底装个“跑步机”</a></li>
+                    <li><a href="#">DeepMind新论文：人工智能学会像哺乳动物那样抄近路</a></li>
+                    <li><a href="#">华为的麒麟980处理器将采用7nm工艺</a></li>
+                    <li><a href="#">高通宣布100亿美元股票回购计划 股价盘后上涨</a></li>
+                    <li><a href="#">阿里发布“公益财报”：近6万员工一年做公益20.2万小时</a></li>
+                    <li><a href="#">当年微软差点没保住Windows：被Lindows公司敲走1.7亿</a></li>
+                    <li><a href="#">洋码头CEO曾碧波：死磕巨头 不怕价格战</a></li>
+                    <li><a href="#">谷歌向开发者免费派送安卓TV开发平台ADT-2</a></li>
+                    <li><a href="#">太空"捉迷藏大戏"即刻上演！错过悔一年</a></li>
+                </ul>
+            </div>
+
+            <div class="right-ad title-public">
+                <h4>
+                    <a href="#">48小时阅读排行</a>
+                    <span class="more">
+                        <a href="#"> 》</a>
+                    </span>
+                </h4>
+                <ul>
+                    <li><a href="#">Visual Studio 2017 15.7 下的.NET Core</a></li>
+                    <li><a href="#">NewLife.Net——构建可靠的网络服务</a></li>
+                    <li><a href="#">谈谈我开发过的几套语音通信解决方案</a></li>
+                    <li><a href="#">手把手教你全家桶之React(二)</a></li>
+                    <li><a href="#">使用ASP.NET SignalR实现一个简单的聊天室</a></li>
+                    <li><a href="#">NewLife.Net——网络压测单机1.88亿tps</a></li>
+                    <li><a href="#">微软黑科技强力注入，.NET C#全面支持人工智能</a></li>
+                    <li><a href="#">8/人天，小记一次 JAVA（APP后台） 项目改造 .NET 过程（后台代码已完整开源于 Github）</a></li>
+                    <li><a href="#">在WinForm应用程序中快速实现多语言的处理</a></li>
+                    <li><a href="#">社区 03：技术人创造的圈子与技术人的圈子</a></li>
+                </ul>
+            </div>
+
+            <div class="right-img">
+                <a href="#"><img src="{% static 'myWebApp/img/hua.jpg' %}">
+                </a>
+            </div>
+
+            <div class="right-ad title-public">
+                <h4>
+                    <a href="#">10天推荐排行</a>
+                    <span class="more">
+                        <a href="#"> 》</a>
+                    </span>
+                </h4>
+                <ul>
+                    <li><a href="#">程序员，你怎么这么忙？</a></li>
+                    <li><a href="#">《你必须掌握的Entity Framework 6.x与Core 2.0》书籍出版</a></li>
+                    <li><a href="#">谈谈我开发过的几套语音通信解决方案</a></li>
+                    <li><a href="#">【封装那些事】 缺失封装</a></li>
+                    <li><a href="#">我们为什么要学习？写给我的组员们</a></li>
+                    <li><a href="#">别跟我谈EF抵抗并发，敢问你到底会不会用EntityFramework</a></li>
+                    <li><a href="#">2018 .NET开发者调查报告: .NET Core 是怎么样的状态</a></li>
+                    <li><a href="#">8/人天，小记一次 JAVA（APP后台） 项目改造 .NET 过程（后台代码已完整开源于 Github）</a></li>
+                    <li><a href="#">微软一年一度的开发者大会，给你带来全新的开发者体验</a></li>
+                    <li><a href="#">使用微服务架构思想，设计部署API代理网关和OAuth2.0授权认证框架</a></li>
+                </ul>
+            </div>
+
+            <div class="right-ad title-public">
+                <h4>
+                    <a href="#">编辑推荐</a>
+                    <span class="more">
+                        <a href="#"> 》</a>
+                    </span>
+                </h4>
+                <ul>
+                    <li><a href="#">谈谈我开发过的几套语音通信解决方案</a></li>
+                    <li><a href="#">浅析fork()和底层实现</a></li>
+                    <li><a href="#">求生欲很强的数据库</a></li>
+                    <li><a href="#">分布式之消息队列复习精讲</a></li>
+                    <li><a href="#">Angular v6 正式发布</a></li>
+                    <li><a href="#">Azure AI 服务之语音识别</a></li>
+                    <li><a href="#">分布式之延时任务方案解析</a></li>
+                    <li><a href="#">.NET环境下跨进程、高频率读写数据</a></li>
+                </ul>
+            </div>
+
+            <div class="right-ad title-public">
+                <h4>
+                    <a href="#">推荐新闻</a>
+                    <span class="more">
+                        <a href="#"> 》</a>
+                    </span>
+                </h4>
+                <ul>
+                    <li><a href="#">百度软件中心版putty被曝恶意捆绑软件</a></li>
+                    <li><a href="#">云联惠总部被封 头目被抓：3300亿特级骗局正式崩盘！</a></li>
+                    <li><a href="#">不到三月市值蒸发超千亿，拼多多成了京东的大麻烦</a></li>
+                    <li><a href="#">.NET Core 3新特性公布：支持Windows桌面应用</a></li>
+                    <li><a href="#">Google Assistant冒充你打电话，接你下茬儿，替你回邮件...</a></li>
+                    <li><a href="#">微软发布了一台能直播写代码的智能会议电话机，太虐人了！</a></li>
+                    <li><a href="#">微软称它最成功的服务器产品运行在 Linux 上</a></li>
+                    <li><a href="#">大数据“加持”下的精准骗局</a></li>
+                </ul>
+            </div>
+            <div class="right-img">
+                <a href="#"><img src="{% static 'myWebApp/img/youpai.jpg' %}">
+                </a>
+            </div>
+
+            <div class="right-ad title-public">
+                <h4>
+                    <a href="#">博问已解决问题</a>
+                    <span class="more">
+                        <a href="#"> 》</a>
+                    </span>
+                </h4>
+                <ul>
+                    <li><a href="#">WEB-INF下的jsp文件如何互相跳转?</a></li>
+                    <li><a href="#">列“XXX”不属于表 Table。</a></li>
+                    <li><a href="#">求助：字符串转换时期和/或时间时，转换失败。</a></li>
+                    <li><a href="#">附件上传不了，代码哪里出问题了？</a></li>
+                    <li><a href="#">20位长度的数字比较大小</a></li>
+                    <li><a href="#">点击登录在原页面上弹出登录小窗口</a></li>
+                    <li><a href="#">EXCEL SUMIF 函数</a></li>
+                    <li><a href="#">如何离线在Windows环境下安装angular/cli !!!</a></li>
+                </ul>
+            </div>
+
+            <div class="right-ad title-public">
+                <h4>
+                    <a href="#">知识库最新文章</a>
+                    <span class="more">
+                        <a href="#"> 》</a>
+                    </span>
+                </h4>
+                <ul>
+                    <li><a href="#">如何高效学习</a></li>
+                    <li><a href="#">如何成为优秀的程序员？</a></li>
+                    <li><a href="#">菜鸟工程师的超神之路 -- 从校园到职场</a></li>
+                    <li><a href="#">如何识别人的技术能力和水平？</a></li>
+                    <li><a href="#">写给自学者的入门指南</a></li>
+                    <li><a href="#">和程序员谈恋爱</a></li>
+                    <li><a href="#">学会学习</a></li>
+                    <li><a href="#">优秀技术人的管理陷阱</a></li>
+                </ul>
+            </div>
+
+            <div class="right-img">
+                <a href="#"><img src="{% static 'myWebApp/img/2050.jpg' %}">
+                </a>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="pg-tail">
+        <div class="tail-page">
+            <span class="page-public"><a href="#">上一页</a></span>
+            <ul>
+            {% for i in pageNum %}
+                <li class="page-public"><a href="#">{{ i }}</a></li>
+            {% endfor %}
+            </ul>
+            <span class="page-public"><a href="#">下一页</a></span>
+        </div>
+        <div class="copyright">IT笨鸟 ©2018-5-11-13-15</div>
+    </div>
+</body>
+</html>
