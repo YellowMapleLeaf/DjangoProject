@@ -15,3 +15,5 @@ admin.site.register(models.Article,ArticleAdmin)
 admin.site.register(models.Category,CategoryAdmin)
 admin.site.register(models.Comment,CommentAdmin)
 admin.site.register(models.UserProfile)
+
+

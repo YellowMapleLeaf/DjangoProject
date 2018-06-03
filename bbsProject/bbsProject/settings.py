@@ -127,12 +127,7 @@ STATICFILES_DIRS=[
     os.path.join(BASE_DIR,'static'),
     os.path.join(BASE_DIR, "upload"),
 ]
-
-#富文本
-TINYMCE_DEFAULT_CONFIG={
-    'theme':'advanced',
-    'width':600,
-    'height':400
-}
+#在有login_request装饰器修饰的函数，如果没有登录，那么就跳转到这个页面
+LOGIN_URL ='/login/'
 
 

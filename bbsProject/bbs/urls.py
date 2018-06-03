@@ -8,6 +8,7 @@ urlpatterns = [
     url(r'^articalShow/(\d+)/$',views.articalShow,name='articalShow'),
     url(r'^userComment/$',views.userComment,name='post_comment'),
     url(r'^getCommentList/$',views.getCommentList,name='getCommentList'),
-    url(r'^contribute/$',views.contribute,name='contribute')
+    url(r'^contribute/$',views.contribute,name='contribute'),
+
 
 ]

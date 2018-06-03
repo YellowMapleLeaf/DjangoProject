@@ -96,6 +96,11 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="/static/bbs/js/jquery-3.3.1.js"></script>
     <script src="/static/bbs/js/bootstrap.min.js"></script>
+{#  富文本引入的js#}
+    <script src="/static/plugin/ckeditor/ckeditor.js"></script>
+    <script>
+        CKEDITOR.replace('content')
+    </script>
 
     <script>
        //显示评论
@@ -227,7 +232,6 @@
                     })//end post
                 }//end else
             });//end click
-
 
         });
     </script>

@@ -2,6 +2,8 @@ from django.shortcuts import render,HttpResponseRedirect,HttpResponse
 from bbs import models
 from django.contrib.auth import login,logout,authenticate
 
+from bbs import form
+
 # from .templatetags import custom
 
 
@@ -296,8 +298,25 @@ def nodeHTML(comment_tree,margin_left):
 #  parameters_in:
 #               request:客户端发来的信息
 #  parameters_out:
-#
-#
+#               bbs/contribute-article.html:编写文章界面
+#                       article_form：模型类里的字段显示
 ####################################################
+# @login_required(login_url='/login/')
+@login_required()
 def contribute(request):
-    pass
+    if request.method=="GET":
+        article_form=form.ArticleModelForm()
+    if request.method=="POST":
+        article_form=form.ArticleModelForm(request.POST,request.FILES)
+        if article_form.is_valid():
+            #将模型中的参数转化为字典去取出来
+            data=article_form.cleaned_data
+
+            data['author_id'] = request.user.userprofile.id
+            article_object=models.Article(**data)
+            article_object.save()
+
+            return HttpResponse("ok!!")
+    return render(request, "bbs/contribute-article.html", {"article_form": article_form})
+
+

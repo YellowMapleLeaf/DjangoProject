@@ -21,6 +21,4 @@ urlpatterns = [
     url(r'^bbs/',include('bbs.urls')),
     url(r'login/$',views.bbs_login,name="login"),
     url(r'logout/$',views.bbs_logout,name="logout"),
-
-
 ]

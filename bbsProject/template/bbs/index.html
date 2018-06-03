@@ -3,7 +3,7 @@
 
 {% block pg-container %}
     <div class="wrap-left">
-        {% for article in article_list %}
+        {% for article in article_list reversed%}
 {#            每一个内容的盒子#}
         <div class="article-box row" >
 
@@ -14,7 +14,7 @@
             </div>
 {#        文章的内容#}
             <div class="article-content col-lg-8">
-                <a href="{% url 'articalShow' article.id %}">{{ article.content }}</a>
+                <a href="{% url 'articalShow' article.id %}">{{ article.content|safe }}</a>
             </div>
 {#        文章作者等信息#}
             <div class="article-info col-lg-8">

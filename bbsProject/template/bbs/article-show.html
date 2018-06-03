@@ -34,7 +34,7 @@
                 </div>
 
                 <div class="article-show-content">
-                    {{ artical_info.content }}
+                    {{ artical_info.content|safe }}
                 </div>
                 {% if request.user.is_authenticated %}
 {#               登录后#}

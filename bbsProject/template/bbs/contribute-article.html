@@ -2,9 +2,14 @@
 {% load custom %}
 
 {% block pg-container %}
+
 {#    左边内容#}
     <div class="wrap-left">
-
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ article_form }}
+            <input type="submit" value="投稿"/>
+        </form>
     </div>
 
 {#    右边内容#}
@@ -12,7 +17,9 @@
 
 
     </div>
+
 {% endblock %}
+
 
 
 
